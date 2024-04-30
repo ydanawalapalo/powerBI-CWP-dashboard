@@ -12,7 +12,7 @@ func CreateCLI() (*cobra.Command, *options) {
 	opts := options{}
 	cmd := &cobra.Command{
 		Use: "custom-reporting",
-		Long: "Custom Developed Reporting tool for Delta Airlines created by " +
+		Long: "Custom Developed Reporting tool for  created by " +
 			"Palo Alto Networks Professional Services. Copyright Palo Alto Networks 2022",
 		RunE: func(cmd *cobra.Command, args []string) error {
 			if err := opts.GenerateReports(); err != nil {
